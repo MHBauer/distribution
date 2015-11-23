@@ -321,11 +321,11 @@ let D = 'sha256:' + EncodeHex(B)
 let ID(C) = D
 ```
 
-Above, we have bytestring _C_ passed into a function, _SHA256_, that returns a
-bytestring B, which is the hash of _C_. _D_ gets the algorithm concatenated
-with the hex encoding of _B_. We then define the identifier of _C_ to _ID(C)_
-as equal to _D_. A digest can be verified by independently calculating _D_ and
-comparing it with identifier _ID(C)_
+Above, we have bytestring `C` passed into a function, `SHA256`, that returns a
+bytestring `B`, which is the hash of `C`. `D` gets the algorithm concatenated
+with the hex encoding of `B`. We then define the identifier of `C` to `ID(C)`
+as equal to `D`. A digest can be verified by independently calculating `D` and
+comparing it with identifier `ID(C)`.
 
 #### Digest Header
 
